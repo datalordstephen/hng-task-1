@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = FastAPI()
 
-@app.get("/api/v1")
+@app.get("/api")
 def return_details(slack_name: str, track: str):
     res = {
         "slack_name": slack_name,
