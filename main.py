@@ -10,8 +10,8 @@ def return_details(slack_name: str, track: str):
         "current_day": datetime.now().strftime("%A"),
         "utc_time": datetime.utcnow(),
         "track": track,
-        "github_file_url": "",
-        "github_repo_url": "",
+        "github_file_url": "https://github.com/datalordstephen/hng-task-1/blob/master/main.py",
+        "github_repo_url": "https://github.com/datalordstephen/hng-task-1",
         "status_code": 200
     }
     
