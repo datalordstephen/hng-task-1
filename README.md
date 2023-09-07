@@ -1,2 +1,2 @@
-# hng-task-1
+# HNG-X Task One
 First task of HNGX
