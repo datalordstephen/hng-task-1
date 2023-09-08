@@ -1,7 +1,13 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
+
+app.json.sort_keys = False
+app.config["DEBUG"] = True
+
+CORS(app)
 
 @app.route('/api', methods=["GET"])
 def return_details():
@@ -19,4 +25,4 @@ def return_details():
             "status_code": 200
         }
         
-        return res
+        return jsonify(res)
